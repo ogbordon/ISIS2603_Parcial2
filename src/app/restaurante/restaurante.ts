@@ -1,4 +1,4 @@
-export class Serie {
+export class Restaurante {
     id: number;
     name: string; 
     opening_year: number;
