@@ -31,4 +31,17 @@ export class RestauranteListComponent implements OnInit {
     this.getRestaurantes(); 
   }
 
+
+  mejorPunt(restaurantes: Restaurante[]) : Restaurante {
+    let bestRating: number = 0;
+    let bestRestaurante: Restaurante = restaurantes[0];
+    restaurantes.forEach((restaurante) => {
+      if (restaurante.rating > bestRating) {
+        bestRating = restaurante.rating;
+        bestRestaurante = restaurante;
+      }
+      });
+    return bestRestaurante; 
+  }
+
 }
