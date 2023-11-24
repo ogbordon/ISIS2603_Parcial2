@@ -32,9 +32,7 @@
       </tbody>
     </table>
   </div>
-  <p>Best Restaurante: {{ mejorPunt(restaurantes) }}</p>
-
-  
+  <p> EL restaurante con mejor puntuacion es {{mejorPunt(restaurantes).name}} y tiene {{mejorPunt(restaurantes).rating}} puntos</p>
 
   <div class="col-6">
     <div *ngIf="selected">
