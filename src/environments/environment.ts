@@ -1,4 +1,4 @@
 export const environment = {
     production: false,
-    baseUrl: 'https://gist.githubusercontent.com/josejbocanegra/8490b48961a69dcd2bfd8a360256d0db/raw/34ff30dbc32392a69eb0e08453a3fc975a3890f0/'
+    baseUrl: 'https://gist.githubusercontent.com/t-montes/5ebece61782d6a06656b71a155ef0698/raw/2f50ca1a3d760da3535d2f374e84d7ea5193faa4/',
   }
