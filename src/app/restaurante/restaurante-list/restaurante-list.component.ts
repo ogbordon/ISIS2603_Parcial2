@@ -9,9 +9,17 @@ import { RestauranteService } from '../restaurante.service';
 })
 export class RestauranteListComponent implements OnInit {
 
+
+  selectedRestaurante!: Restaurante;
+  selected = false; 
   restaurantes: Array<Restaurante> = [];
 
   constructor(private restauranteService: RestauranteService) { }
+
+  onSelected(restaurante: Restaurante): void {
+    this.selected = true;
+    this.selectedRestaurante = restaurante;
+  }
 
   getRestaurantes(): void {
     this.restauranteService.getRestaurantes().subscribe((restaurantes) => {

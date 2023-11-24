@@ -12,7 +12,7 @@
         </tr>
         </thead>
       <tbody>
-        <tr *ngFor="let r of restaurantes">
+        <tr *ngFor="let r of restaurantes" (click)="onSelected(r)">
           <td>
             <dd>{{r.id}}</dd>
           </td>
@@ -32,3 +32,12 @@
       </tbody>
     </table>
   </div>
+
+  <div class="col-6">
+    <div *ngIf="selected">
+      <app-restaurante-detail [restauranteDetail]="selectedRestaurante"></app-restaurante-detail>
+     </div>
+    </div>
+    </div>
+    </div>
+    
